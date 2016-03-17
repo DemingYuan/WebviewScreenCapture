@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.edu.hust.software.welcome.WelcomeActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_wel"
+        android:layout_marginStart="39dp"
+        android:layout_below="@+id/text_wel"
+        android:layout_alignParentStart="true"
+        android:editable="true"
+        android:inputType="none"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please enter URL:"
+        android:id="@+id/text_wel"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edit_wel"
+        android:layout_marginTop="27dp"
+        android:editable="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youtube"
+        android:id="@+id/button_auto"
+        android:layout_below="@+id/edit_wel"
+        android:layout_alignStart="@+id/edit_wel"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo"
+        android:id="@+id/button_demo"
+        android:layout_below="@+id/button_auto"
+        android:layout_alignStart="@+id/button_auto" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/button_ok"
+        android:layout_alignTop="@+id/button_auto"
+        android:layout_toEndOf="@+id/button_auto"
+        />
+</RelativeLayout>

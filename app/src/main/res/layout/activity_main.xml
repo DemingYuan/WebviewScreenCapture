@@ -1,0 +1,40 @@
+<LinearLayout
+android:orientation="horizontal"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:addroid="http://schemas.android.com/tools"
+    >
+<!-- 这是左侧部分 -->
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+    ----------------这部分写左侧的内容--------------------
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layerType="hardware"
+        android:id="@+id/webView" />
+</LinearLayout>
+    <!--中间-->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+<!-- 这是右侧部分 -->
+<LinearLayout
+    android:id="@+id/sample_content_fragment"
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+    ---------------- 这部分写右侧的内容-------------------
+
+
+</LinearLayout>
+</LinearLayout>
